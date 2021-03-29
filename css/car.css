@@ -137,7 +137,7 @@
   height: 75px;
   left: 34px;
   top: 27px;
-  background-color: rgba(0, 0, 0, 0.15);
+  background-color: rgba(0, 0, 0, 0.5);
   transform: rotateZ(-8deg) skewX(21deg);
   border: 7px solid yellow;
   border-radius: 25px 190px 20px 100px;
