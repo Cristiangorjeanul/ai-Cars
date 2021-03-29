@@ -1,0 +1,148 @@
+/* CLOUD */
+#cloud {
+  width: 80px;
+  height: 50px;
+  top: 15px;
+  position: relative;
+  animation: cloud 15s infinite linear;
+  z-index: 0;
+}
+
+#shape {
+  position: absolute;
+  width: 140px;
+  height: 35px;
+  background: white;
+  border-radius: 100px;
+  z-index: 2;
+}
+
+#cloud:after,
+#cloud:before {
+  content: "";
+  position: absolute;
+  background: white;
+  z-index: 1;
+}
+
+#cloud:after {
+  width: 50px;
+  height: 50px;
+  top: -21px;
+  left: 39px;
+  border-radius: 100px;
+}
+
+#cloud:before {
+  width: 70px;
+  height: 70px;
+  top: -35px;
+  left: 80px;
+  border-radius: 200px;
+}
+
+@keyframes cloud {
+  0% {
+    right: 100%;
+  }
+  100% {
+    right: -100%;
+  }
+}
+
+/* WIND-TURBINE */
+#wind-turbine {
+  position: relative;
+  width: 197px;
+  height: 321px;
+  margin-top: 15%;
+  float: right;
+  animation: turbine-move 4s infinite linear;
+}
+
+@media (min-width: 768px) {
+  #wind-turbine {
+    margin-top: -10%;
+  }
+}
+
+@keyframes turbine-move {
+  0% {
+    right: -50%;
+  }
+  100% {
+    right: 100%;
+  }
+}
+
+#turbine {
+  width: 195px;
+  height: 305px;
+  margin: auto;
+}
+
+#generator {
+  position: absolute;
+  top: 75px;
+  left: 45.5%;
+}
+
+#rotor {
+  position: absolute;
+  width: 35px;
+  height: 35px;
+  background: lime;
+  border-radius: 50%;
+  animation: rotation 5s infinite linear;
+}
+
+@keyframes rotation {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.blade {
+  position: absolute;
+  width: 75px;
+  height: 10px;
+  top: 12px;
+  left: 18px;
+  background: lime;
+  border-radius: 0 24px 40px 0;
+  transform-origin: 0 8px;
+}
+
+.blade:after {
+  content: "";
+  position: absolute;
+  width: 1px;
+  top: 1px;
+  left: 19px;
+  border-top: 20px solid lime;
+  border-right: 35px solid transparent;
+  border-left: 35px solid transparent;
+}
+
+.number1 {
+  transform: rotate(0deg);
+}
+
+.number2 {
+  transform: rotate(120deg);
+}
+
+.number3 {
+  transform: rotate(240deg);
+}
+
+#pole {
+  width: 5px;
+  margin: auto;
+  border-bottom: 246px solid lime;
+  border-right: 14px solid transparent;
+  border-left: 14px solid transparent;
+}

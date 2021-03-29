@@ -1,0 +1,231 @@
+/* ELECTRIC-CAR */
+#electric-car {
+  width: 100%;
+  height: 279px;
+}
+
+#street {
+  background-color: dimgrey;
+  width: 100%;
+  height: 75px;
+  overflow: hidden;
+  z-index: 10;
+}
+
+#street-line {
+  position: relative;
+  width: 21%;
+  height: 5px;
+  top: 43%;
+  float: right;
+  background-color: lightyellow;
+  animation: street-line 2s infinite linear;
+}
+
+@keyframes street-line {
+  0% {
+    right: -50%;
+  }
+  100% {
+    right: 100%;
+  }
+}
+
+#car {
+  width: 290px;
+  height: 170px;
+  margin: 0 auto;
+  margin-top: -190px;
+  z-index: 50;
+  animation: car-animation 5s linear infinite;
+}
+
+@keyframes car-animation {
+  25% {
+    transform: translateY(7px);
+  }
+  50% {
+    transform: translateY(0px);
+  }
+  75% {
+    transform: translateY(3px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+#front-wheel {
+  margin-left: 205px;
+}
+
+#rear-wheel {
+  margin-left: 27px;
+}
+
+#front-wheel,
+#rear-wheel {
+  position: absolute;
+  width: 59px;
+  height: 59px;
+  top: 110px;
+  border-radius: 50%;
+  border: 9px solid black;
+  background-color: lime;
+  z-index: 5;
+  animation: wheel-rotation 1s infinite linear;
+}
+
+@keyframes wheel-rotation {
+  25% {
+    transform: rotateZ(90deg);
+  }
+  50% {
+    transform: rotateZ(180deg);
+  }
+  75% {
+    transform: rotateZ(270deg);
+  }
+  100% {
+    transform: rotateZ(360deg);
+  }
+}
+
+#wheel-spoke1,
+#wheel-spoke2,
+#wheel-spoke3 {
+  position: relative;
+  width: 8px;
+  height: 17px;
+  background-color: red;
+  border-radius: 50% 50% 50% 50%;
+}
+
+#wheel-spoke1 {
+  top: 12px;
+  left: 4px;
+  transform: rotateZ(90deg);
+}
+
+#wheel-spoke2 {
+  top: 5px;
+  left: 23px;
+  transform: rotateZ(330deg);
+}
+
+#wheel-spoke3 {
+  top: -32px;
+  left: 23px;
+  transform: rotateZ(210deg);
+}
+
+#chassis {
+  position: relative;
+  width: 271px;
+  height: 70px;
+  left: 1px;
+  bottom: 5px;
+  margin: 0 auto;
+  background: lime;
+  border: 5px solid lime;
+  border-radius: 370px 750px 150px 150px;
+}
+
+#ceiling {
+  position: relative;
+  width: 200px;
+  height: 75px;
+  left: 34px;
+  top: 27px;
+  background-color: rgba(0, 0, 0, 0.15);
+  transform: rotateZ(-8deg) skewX(21deg);
+  border: 7px solid yellow;
+  border-radius: 25px 190px 20px 100px;
+}
+
+#door {
+  position: relative;
+  width: 1.9px;
+  height: 96px;
+  left: 81px;
+  bottom: 149px;
+  background-color: black;
+  transform: skewX(28deg) skewY(30deg);
+}
+
+#front-lights {
+  position: relative;
+  width: 12px;
+  height: 23px;
+  bottom: 72px;
+  left: 251px;
+  background-color: white;
+  border: 0.5px solid green;
+  border-radius: 50% 50% 50% 50%;
+  transform: skewX(45deg) skewY(30deg);
+}
+
+#flash-light {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  top: 50%;
+  left: 50%;
+  background-color: white;
+  border-radius: 50%;
+  box-shadow: 0 0 0 0 white;
+  animation: 2s flash-light-animation linear infinite;
+}
+
+@keyframes flash-light-animation {
+  0%,
+  100% {
+    box-shadow: 0 0 0 0 lightskyblue;
+  }
+  29% {
+    box-shadow: 5px 0 0 0 white;
+  }
+  35% {
+    box-shadow: 5px 0 50px 50px white;
+  }
+  38% {
+    box-shadow: 5px 0 0 0 white;
+  }
+  39% {
+    box-shadow: 0 0 0 0 lightskyblue;
+  }
+  51% {
+    box-shadow: 5px 0 0 0 white;
+  }
+  55% {
+    box-shadow: 5px 0 50px 50px white;
+  }
+  59% {
+    box-shadow: 5px 0 0 0 white;
+  }
+  60% {
+    box-shadow: 0 0 0 0 lightskyblue;
+  }
+}
+
+#rear-lights {
+  position: relative;
+  width: 10px;
+  height: 21px;
+  bottom: 97px;
+  left: 17px;
+  background-color: red;
+  transform: skewX(-47deg) skewY(30deg);
+  border: 0.5px solid green;
+  border-radius: 50% 50% 50% 50%;
+}
+
+#door-handle {
+  position: relative;
+  height: 5px;
+  width: 23px;
+  left: 85px;
+  bottom: 110px;
+  background: black;
+  border-radius: 35%;
+}

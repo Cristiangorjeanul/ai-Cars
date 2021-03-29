@@ -1,0 +1,261 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  height: 100%;
+  background: black;
+}
+
+.jumbotron {
+  width: 100%;
+  background-color: white;
+  color: white;
+  border: 1px solid blue;
+  background-image: url(https://upload.wikimedia.org/wikipedia/commons/e/e3/Sustainable_electronics.jpeg);
+  background-size: 100%;
+  padding: 9px 1px 1px 1px;
+  font-family: Montserrat, sans-serif;
+}
+
+.container-fluid {
+  padding: 12px 1px 1px 1px;
+}
+
+.panel-heading {
+  color: white !important;
+  background-color: white !important;
+  padding-top: 15px;
+  padding-bottom: 29px;
+}
+
+.col-sm-12 {
+  padding-top: 8px;
+}
+
+.col-sm-4 {
+  padding: 1px;
+}
+
+  .panel-body {
+	margin-top: 50px;
+}
+.panel p {
+font-size: 15px;
+  font-weight: 800;
+}
+
+.jumbotron h1 {
+  text-align: center;
+  font-family: "Orbitron", "Erica One";
+  margin-top: 23px;
+  font-size: 27px;
+  color: lime;
+  text-shadow: 0 1px 0 white, 0 2px 0 white, 0 3px 0 white,
+    0 6px 1px rgba(0, 0, 0, 0.1), 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+@media (min-width: 769px) {
+  .jumbotron h1 {
+    font-size: 37px;
+  }
+}
+
+/* MESSAGE */
+#vehicle-types:after {
+  content: "";
+  animation: message 5s linear infinite;
+}
+
+@keyframes message {
+  0%,
+  100% {
+    content: "ai CAR";
+    color: magenta;
+  }
+  32% {
+    content: "ai CAR";
+    color: magenta;
+  }
+  33% {
+    content: "ai BUS";
+    color: yellow;
+  }
+  65% {
+    content: "ai BUS";
+    color: yellow;
+  }
+  66% {
+    content: "ai TRUCK";
+    color: cyan;
+  }
+  99% {
+    content: "ai TRUCK";
+    color: cyan;
+  }
+}
+
+h2 {
+  font-size: 21px;
+  text-align: center;
+  font-weight: 900;
+  color: red;
+  margin-top: 5px;
+  text-shadow: 1.5px 1.5px 3.5px black;
+}
+
+@media (min-width: 768px) {
+  h2 {
+    font-size: 32px;
+  }
+}
+
+.texts {
+  margin-top: -23px;
+  width: 100%;
+  height: 35px;
+}
+
+h3 {
+  font-size: 19px;
+  font-family: "Erica One";
+  color: yellow;
+  margin-top: 5px;
+  margin-bottom: 1px;
+  text-align: center;
+  font-weight: 100;
+}
+
+@media (min-width: 768px) {
+  h3 {
+    font-size: 29px;
+  }
+}
+
+h4 {
+  color: red;
+  font-size: 17px;
+  text-align: center;
+  width: 90%;
+  font-weight: 800;
+  margin-left: auto;
+  margin-right: auto;
+  padding-bottom: 5px;
+  text-shadow: 1px 1px 1px black;
+}
+
+h5 {
+	font-size: 14px;
+  font-weight: 500;
+  text-align: center;
+  color: red;
+  text-shadow: 0.9px 0.9px 0.9px black;
+}
+
+.glyphicon {
+	font-size: 35px;
+	color: gold;
+}
+
+img {
+  width: 85%;
+  border: 3.5px solid lime;
+}
+
+.content p {
+  text-align: justify;
+  text-justify: inter-word;
+}
+
+.description {
+  text-align: justify;
+  text-justify: inter-word;
+}
+
+.row {
+  margin: 1px;
+}
+
+.content {
+  padding: 14px;
+  background-color: rgba(0, 0, 0, 0.5);
+  margin-top: 5px;
+}
+
+.content h3 {
+  margin-top: 1px;
+}
+
+.carousel-container {
+  background-color: rgba(0, 0, 0, 0.35);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  margin-top: 15px;
+  width: 100%;
+  height: 325px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  perspective: 1000px;
+}
+
+.carousel {
+  width: 310px;
+  height: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transform-style: preserve-3d;
+  animation: rotate 19s linear infinite;
+}
+
+@keyframes rotate {
+	0% {
+	  transform: rotateY(360deg);
+	}
+  }
+  
+.drawing {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-color: white;
+  box-shadow: 0.35px 0.35px 0 3.5px lime;
+}
+
+.drawing:nth-of-type(1) {
+  background: url(../assets/ai-car.jpg);
+  transform: rotateY(90deg) translateZ(171px);
+}
+
+.drawing:nth-of-type(2) {
+  background: url(../assets/ai-taxi.jpg);
+  transform: rotateY(180deg) translateZ(171px);
+}
+
+.drawing:nth-of-type(3) {
+  background: url(../assets/ai-car.jpg);
+  transform: rotateY(270deg) translateZ(171px);
+}
+
+.drawing:nth-of-type(4) {
+	background: url(../assets/ai-taxi.jpg);
+  transform: rotateY(0deg) translateZ(171px);
+}
+
+.thumbnail {
+  padding: 5px;
+  border: 3.5px solid lime;
+  background-color: rgba(0, 0, 0, 0.35);
+  border-radius: 0;
+  margin: 5px auto;
+}
+
+iframe {
+  width: 100%;
+}
