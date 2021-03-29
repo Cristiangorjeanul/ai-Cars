@@ -47,9 +47,9 @@ font-size: 15px;
 
 .jumbotron h1 {
   text-align: center;
-  font-family: "Orbitron", "Erica One";
+  font-family: "Erica One", "Orbitron";
   margin-top: 23px;
-  color: lime;
+  color: red;
   text-shadow: 0 1px 0 white, 0 3px 0 white, 0 5px 0 white,
     0 6px 1px rgba(0, 0, 0, 0.1), 0 0 5px rgba(0, 0, 0, 0.1);
 }
@@ -72,11 +72,11 @@ font-size: 15px;
   }
   33% {
     content: "ai BUS";
-    color: yellow;
+    color: lime;
   }
   65% {
     content: "ai BUS";
-    color: yellow;
+    color: lime;
   }
   66% {
     content: "ai TRUCK";
