@@ -3,7 +3,7 @@ $(function () {
 
 	var vehicleNumber = 1;
 	var numVehicles = 0;
-	var maxVehicles = 10;
+	var maxVehicles = 3;
 	var lanePref = 2;
 	var vehicles = [];
 
@@ -13,7 +13,7 @@ $(function () {
 		this.lane = type ? lane : 2;
 		this.lanePref = Math.floor(Math.random() * lanePref);
 		this.lanePref = 2;
-		this.width = type ? 50 : 100;
+		this.width = type ? 50 : 90;
 		this.location = - this.width;
 		this.speed = (5 + Math.floor(Math.random() * 8) + (5 * type)) / 2;
 		this.caution = this.speed * 1.5;
@@ -50,7 +50,7 @@ $(function () {
 		this.location += speed ? speed : this.speed;
 		$("#" + this.id).css("left", this.location + "px"); // move it
 
-		if (this.location > $(window).width()) {
+		if (this.location > $(window).width()*0.8) {
 			remove(this);
 			numVehicles -= 1;
 		}
@@ -189,7 +189,7 @@ $(function () {
 	function createVehicle() {
 		if (numVehicles < maxVehicles) {
 			var lane = Math.floor(Math.random() * 2);
-			var type = Math.floor(Math.random() * 8);
+			var type = Math.floor(Math.random() * 10);
 			if (laneOpen(lane)) {
 				var vehicle = new Vehicle(type, lane);
 				setInterval(function () { vehicle.drive(); }, 200);

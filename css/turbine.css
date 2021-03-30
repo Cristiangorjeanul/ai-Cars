@@ -4,7 +4,7 @@
   height: 50px;
   top: 15px;
   position: relative;
-  animation: cloud 15s infinite linear;
+  animation: cloud 3s infinite alternate;
   z-index: 0;
 }
 
@@ -43,10 +43,10 @@
 
 @keyframes cloud {
   0% {
-    right: 100%;
+    transform: translate(10%);
   }
   100% {
-    right: -100%;
+    transform: translate(95%);
   }
 }
 
@@ -68,7 +68,7 @@
 
 @keyframes turbine-move {
   0% {
-    right: -50%;
+    right: -1%;
   }
   100% {
     right: 100%;
