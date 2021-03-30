@@ -211,8 +211,8 @@ img {
 }
 
 .drawing:nth-of-type(1) {
-  width: 250px;
-  height: 160px;
+  width: 310px;
+  height: 200px;
   background: url(../assets/ai-car.jpg);
   background-repeat: no-repeat;
   background-size: 100%;
@@ -220,8 +220,8 @@ img {
 }
 
 .drawing:nth-of-type(2) {
-  width: 250px;
-  height: 160px;
+  width: 310px;
+  height: 200px;
   background: url(../assets/ai-taxi.jpg);
   background-repeat: no-repeat;
   background-size: 100%;
