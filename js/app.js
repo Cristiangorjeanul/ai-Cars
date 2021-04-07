@@ -121,7 +121,7 @@ $(function () {
 		$("#street1").css("font-size", "21px");
 		$("#street2").text("Cars number-Lane 1: " + "");
 		$("#street2").css("text-align", "center");
-		$("#street2").css("color", "lime");
+		$("#street2").css("color", "cyan");
 		$("#street2").css("font-size", "21px");
 		vehicles.forEach(function (item) {
 			if (item.lane == 0) {

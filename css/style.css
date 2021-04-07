@@ -73,11 +73,11 @@ body {
   }
   33% {
     content: "SELF DRIVING CARS";
-    color: lime;
+    color: springgreen;
   }
   65% {
     content: "SELF DRIVING CARS";
-    color: lime;
+    color: springgreen;
   }
   66% {
     content: "AUTONOMOUS CARS";
@@ -191,7 +191,7 @@ img {
   justify-content: center;
   align-items: center;
   transform-style: preserve-3d;
-  animation: rotate 19s linear infinite;
+  animation: rotate 8s linear infinite;
 }
 
 @keyframes rotate {
