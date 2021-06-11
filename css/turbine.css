@@ -57,7 +57,7 @@
   height: 321px;
   margin-top: 15%;
   float: right;
-  animation: turbine-move 4s infinite linear;
+  animation: turbine-move 5s infinite linear;
 }
 
 @media (min-width: 768px) {
@@ -143,6 +143,6 @@
   width: 5px;
   margin: auto;
   border-bottom: 246px solid lime;
-  border-right: 14px solid transparent;
-  border-left: 14px solid transparent;
+  border-right: 17px solid transparent;
+  border-left: 17px solid transparent;
 }
